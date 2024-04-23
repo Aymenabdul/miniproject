@@ -1,0 +1,93 @@
+@charset "ISO-8859-1";
+*{
+	margin:0;
+	padding:0;
+	font-family:behatrice;
+}
+::placeholder{
+	color:#00006a;
+}
+.container{
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:linear-gradient(to top right ,#0D324D,#7F5A83); 
+}
+.outline{
+	width:350px;
+	height:350px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid #ccc;
+	border-radius:10px;
+	padding:20px;
+	background-color:#f7f7f7;
+	transition:width ease 0.5s; 
+}
+
+input{
+	margin-bottom:24px;
+	font-size:19px;
+	padding:7px 14px;
+	border:none;
+	border-bottom:1px dashed #ccc;
+	width:100%;
+	border-radius:10px;
+	outline:none;
+}
+.btn{
+	font-size:16px;
+	font-weight:700;
+	padding:7px 14px;
+	width:100%;
+	margin-top:20px;
+	border-radius:5px;
+	border:none;
+	background-color:blue;
+	color:white;
+	margin-bottom:30px;
+}
+.btn:hover{
+	background-color:#9595ff;
+	color:#00009d;
+	transition:all ease 0.5s;
+	cursor:pointer;
+}
+.anchor{
+	text-decoration:none;
+	margin-left:50px;
+	font-weight:500;
+	color:#00006a;
+}
+.anchor:hover{
+	color:#008200;
+}
+@media(max-width:400px){
+	.outline{
+	width:250px;
+	transition:width ease 0.5s;
+	
+	}
+}
+/*Animation Starts*/
+
+.dance{
+	animation-name:dance;
+	animation-iteration-count:1;
+	animation-duration:0.5s;
+	animation-timing-function:linear;
+}
+
+@keyframes dance{
+from{
+transform:translateX(1000px);
+
+}
+to{
+	transform:translateX(0);
+	
+}
+}
